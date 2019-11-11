@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Iniciar Sesion</title>
+</head>
+<body class="text-center index" background="../static/img/mountains.jpeg">
+  <form  method="post" action="/click_login">
+      <div class="mb-4">
+        <img class = "mb-4" src="../static/img/61CD2t4VmDL.png" width="150" height="150">
+        <h1 class="h3 mb-3 font-weight-normal">Iniciar sesion</h1>
+      </div>
+      <div class="form-label-group">
+        <input type="text" class="form-control" name = "username" placeholder="Ingresa tu usuario">
+      </div>
+      <div class="form-label-group">
+          <input type="password" class="form-control" name =  "password" placeholder="Ingresa tu contraseña">
+      </div>
+      <input type = "submit" value="Iniciar Sesion" class="btn btn-primary">
+      
+      <br>
+      <br>
+      <h1 class="display-4 ">{{error}}</h1>
+  </form>
+  <form action="/click_registro" method="get">
+    <input type = "submit" value="Registrarse" class="btn btn-primary">
+  </form>
+
+
+  
+</body>
+</html>

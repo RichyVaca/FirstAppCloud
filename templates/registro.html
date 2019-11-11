@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Registro</title>
+</head>
+<body class="bodyr1">
+  <div class="container-fluid">
+    <center><h1 class="display-2">Registro</h1></center>
+    <form method="post" action="/click_registro">
+    
+      <h2 class="h3 mb-3 font-weight-normal center" >Escribir tu nombre de usuario</h2>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="username">
+      <h2 class="h3 mb-3 font-weight-normal center" >Escribir tu contraseña</h2>
+      <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="password">
+    </div>
+    <center><input type="submit" class="btn btnj btn-primary" value="Registrarse"></center>
+  </form>
+  <br>
+  <br>
+  <h1 class="h1">{{mensaje}}</h1>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Juego</title>
+</head>
+<body class = "bodyj1" background="../static/img/background-blank-empty-62693.jpg"s>
+  <center>
+    <form action="/click_dale" method="post">
+
+      <div class="container-fluid">
+        <div class="">
+          <h1 class="display-4 mb-6 ">"Escribe tu opcion"</h1>
+          <h2 class="h3 mb-3 font-weight-normal center" >1.- Piedra</h2>
+          <h2 class="h3 mb-3 font-weight-normal center" >2.- Papel</h2>
+          <h2 class="h3 mb-3 font-weight-normal center" >3.- Tijera</h2>
+          <div class="input-group input-group-lg res">
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="opcionT">
+          </div>
+        </div>
+        <input type="submit" class="btn btnj btn-primary">
+      </div>
+      <div class="input-group-prepend center">
+        <h1 class="display-4 ">{{resultado}}</h1>
+      </div>
+      <br>
+      <h2 class="h2 ">Numero de intentos restantes {{intentos}}</h2>
+    </form>
+  </center>
+  </body>
+</html>
